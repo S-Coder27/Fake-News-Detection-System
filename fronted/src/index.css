@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Theme */
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  background: #020617;
+  color: #f8fafc;
+
+  background-image:
+    radial-gradient(circle at top left,
+      rgba(0, 229, 255, 0.12),
+      transparent 30%),
+    radial-gradient(circle at top right,
+      rgba(139, 92, 246, 0.12),
+      transparent 30%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00e5ff;
+  border-radius: 20px;
+}
+
+/* Glass Card */
+
+.card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(0, 229, 255, 0.2);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 0 25px rgba(0, 229, 255, 0.08),
+    0 0 60px rgba(139, 92, 246, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 35px rgba(0, 229, 255, 0.15),
+    0 0 70px rgba(139, 92, 246, 0.15);
+}
+
+/* Input */
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(0, 229, 255, 0.25);
+
+  background: rgba(15, 23, 42, 0.8);
+
+  color: white;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #94a3b8;
+}
+
+.input-field:focus {
+  border-color: #00e5ff;
+
+  box-shadow:
+    0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+/* Primary Button */
+
+.primary-btn {
+  background: linear-gradient(
+    135deg,
+    #00e5ff,
+    #8b5cf6
+  );
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 22px;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 25px rgba(0, 229, 255, 0.7),
+    0 0 40px rgba(139, 92, 246, 0.4);
+}
+
+/* REAL NEWS */
+
+.real-card {
+  background: rgba(34, 197, 94, 0.12);
+
+  border: 2px solid #22c55e;
+
+  box-shadow:
+    0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+/* FAKE NEWS */
+
+.fake-card {
+  background: rgba(239, 68, 68, 0.12);
+
+  border: 2px solid #ef4444;
+
+  box-shadow:
+    0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+/* Neon Text */
+
+.neon-text {
+  color: #00e5ff;
+
+  text-shadow:
+    0 0 10px rgba(0, 229, 255, 0.7),
+    0 0 25px rgba(0, 229, 255, 0.4);
+}
+
+/* Stats Cards */
+
+.stats-card {
+  background: rgba(15, 23, 42, 0.75);
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.stats-card:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 0 25px rgba(139, 92, 246, 0.3);
+}
